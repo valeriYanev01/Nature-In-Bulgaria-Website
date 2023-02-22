@@ -69,18 +69,24 @@ h1 {
 
 .main {
   position: relative;
+  max-width: 100%;
+}
+
+.main--container {
+  max-width: 80%;
+  margin: auto;
 }
 
 .front-page-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  width: 80%;
+  width: inherit;
 }
 
 .text {
-  width: 50%;
+  width: 100%;
+  text-align: center;
   position: absolute;
   background: none;
   color: #343a40;
@@ -90,4 +96,5 @@ h1 {
   transform: translate(50%, -50%);
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5em;
+  max-width: inherit;
 }
