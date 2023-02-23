@@ -34,7 +34,7 @@ h1 {
   gap: 2em;
   margin-left: auto;
   position: relative;
-  right: 15em;
+  right: 5em;
 }
 
 .nav--link:link,
@@ -48,12 +48,18 @@ h1 {
   color: #76ba99;
 }
 
-/* .nav--link--deal:hover {
+.nav--link--deal:hover {
   color: #5e957a;
-} */
+}
 
 .nav--link--deal:active {
   color: #5e957a;
+}
+
+.user--icon {
+  display: flex;
+  font-size: 2em;
+  gap: 5em;
 }
 
 .border {
@@ -85,16 +91,35 @@ h1 {
 }
 
 .text {
-  width: 100%;
   text-align: center;
   position: absolute;
-  background: none;
-  color: #343a40;
+  padding: 0.5em;
   font-size: 4em;
+  font-stretch: expanded;
+  width: 80%;
   top: 50%;
   right: 50%;
+  background: none;
+  color: #343a40;
   transform: translate(50%, -50%);
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 0.5em;
-  max-width: inherit;
+  background-size: auto;
+}
+
+.content {
+  display: flex;
+  max-width: 100%;
+}
+
+.content--img--container {
+  display: grid;
+  margin: 2em auto;
+  grid-template-columns: 40em 40em;
+  row-gap: 1em;
+  justify-items: center;
+}
+
+/* Need to style the images - add hover transition effect with text and introduction before the images */
+
+.content--img {
 }
