@@ -1,3 +1,71 @@
+* {
+  color: #343a40;
+  background-color: #f8fafc;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.h1--link {
+  text-decoration: none;
+}
+
+.nav--links {
+  display: flex;
+  gap: 2em;
+  margin-left: auto;
+  position: relative;
+  right: 5em;
+}
+
+.nav--link:link,
+:visited {
+  font-size: 1.5em;
+  text-decoration: none;
+  gap: 2em;
+}
+
+.nav--link--deal {
+  color: #76ba99;
+}
+
+.nav--link--deal:hover {
+  color: #5e957a;
+}
+
+.nav--link--deal:active {
+  color: #5e957a;
+}
+
+.user--icon {
+  display: flex;
+  font-size: 2em;
+  gap: 5em;
+}
+
+.border {
+  border: solid;
+  height: 1.5em;
+  width: 98%;
+  background: #343a40;
+  border-radius: 0.3em;
+  margin-bottom: 0.5em;
+  margin: auto;
+  margin-bottom: 0.4em;
+}
+
 .content {
   display: flex;
   max-width: 100%;
