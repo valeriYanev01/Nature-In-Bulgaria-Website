@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  max-width: 100%;
+}
+
+.content--img--container {
+  display: grid;
+  margin: 2em auto;
+  grid-template-columns: 40em 40em;
+  row-gap: 1em;
+  justify-items: center;
+}

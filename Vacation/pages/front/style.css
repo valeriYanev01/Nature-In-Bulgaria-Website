@@ -105,21 +105,3 @@ h1 {
   background-color: rgba(255, 255, 255, 0.5);
   background-size: auto;
 }
-
-.content {
-  display: flex;
-  max-width: 100%;
-}
-
-.content--img--container {
-  display: grid;
-  margin: 2em auto;
-  grid-template-columns: 40em 40em;
-  row-gap: 1em;
-  justify-items: center;
-}
-
-/* Need to style the images - add hover transition effect with text and introduction before the images */
-
-.content--img {
-}
