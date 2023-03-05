@@ -146,6 +146,13 @@ h1 {
   font-size: 4em;
 }
 
+.general--information--author {
+  text-align: end;
+  margin-right: 5em;
+  margin-top: 0.5em;
+  font-weight: 700;
+}
+
 .front--intro {
   display: block;
 }
@@ -158,10 +165,9 @@ h1 {
 .front--info {
   display: flex;
   flex-wrap: wrap;
-  gap: 20em;
-  justify-content: center;
-  border-bottom: #343a40 solid 0.2em;
-  width: 85%;
+  gap: 5em;
+  justify-content: space-evenly;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
@@ -169,9 +175,95 @@ h1 {
 }
 
 .front--info--el {
+  margin: 1em;
+  border: solid #343a40 0.3em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  width: 20%;
+  overflow: hidden;
+  height: 94%;
+  box-shadow: 1em 2em 1em 0.3em rgba(52, 58, 64, 0.2);
+  transform: translate(0.05em, -0.05em);
 }
 
-.ph-mountains {
-  font-size: 5em;
-  color: #5e957a;
+.front--info--el:hover {
+  animation-name: enlarge;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enlarge {
+  0% {
+  }
+
+  100% {
+    box-shadow: 0.7em 1.5em 0.7em 0.2em rgba(52, 58, 64, 0.2);
+    transform: translate(0.2em, -0.2em);
+  }
+}
+
+.el--header {
+  height: 40%;
+  border-bottom: #343a40 solid 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  background: #000;
+}
+
+.el--header--text {
+  background: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: 0.15em;
+  border-bottom: solid #343a40 0.2em;
+  padding: 0.2em;
+  margin: 0 0.5em 0 0.5em;
+}
+.el--header--img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 50em;
+  border-top-right-radius: 1.6em;
+  height: -webkit-fill-available;
+}
+
+.el--center {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.5em;
+  padding: 0.5em 0.5em;
+  text-transform: uppercase;
+  border-bottom: 0.2em solid #343a40;
+}
+
+.el--center i {
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 1.5em;
+  color: #76ba99;
+}
+
+.el--info--mountain {
+  text-transform: none;
+}
+
+.el--button {
+  display: flex;
+  flex-direction: column;
+  height: 4em;
+  transform: translate(0, 0.7em);
+}
+
+.el--button button {
+  font-size: 1.5em;
+  border: none;
+  background: #343a40;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  height: 4em;
 }
