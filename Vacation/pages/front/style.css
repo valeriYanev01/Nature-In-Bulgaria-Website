@@ -189,13 +189,14 @@ h1 {
 
 .front--info--el:hover {
   animation-name: enlarge;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
 .front--info--el:not(:hover) {
   animation-name: decrement;
-  animation-duration: 0.7s;
+  animation-duration: 0.25s;
+  animation-direction: reverse;
 }
 
 @keyframes enlarge {
@@ -207,8 +208,12 @@ h1 {
 
 @keyframes decrement {
   100% {
+    box-shadow: 0.7em 1.5em 0.7em 0.2em rgba(52, 58, 64, 0.2);
+    transform: translate(0.2em, -0.2em);
+  }
+  0% {
     box-shadow: 1em 2em 1em 0.3em rgba(52, 58, 64, 0.2);
-    transform: translate(0.1em, -0.1em);
+    transform: translate(0.05em, -0.05em);
   }
 }
 
