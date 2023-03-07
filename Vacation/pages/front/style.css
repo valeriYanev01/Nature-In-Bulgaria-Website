@@ -193,18 +193,49 @@ h1 {
   animation-fill-mode: forwards;
 }
 
-@keyframes enlarge {
-  0% {
-  }
+.front--info--el:not(:hover) {
+  animation-name: decrement;
+  animation-duration: 0.7s;
+}
 
+@keyframes enlarge {
   100% {
     box-shadow: 0.7em 1.5em 0.7em 0.2em rgba(52, 58, 64, 0.2);
     transform: translate(0.2em, -0.2em);
   }
 }
 
+@keyframes decrement {
+  100% {
+    box-shadow: 1em 2em 1em 0.3em rgba(52, 58, 64, 0.2);
+    transform: translate(0.1em, -0.1em);
+  }
+}
+
+.front--info--wrapper {
+  height: 79.7%;
+  display: block;
+}
+
+.additional--content {
+  display: none;
+  height: 79.7%;
+  margin: 1em 1em 0 1em;
+  margin-bottom: -1em;
+}
+
+.additional--content--text:first-child::first-letter {
+  color: #76ba99;
+  font-weight: bold;
+  font-size: 3.5em;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px;
+  margin-top: -3px;
+}
+
 .el--header {
-  height: 40%;
+  height: 50%;
   border-bottom: #343a40 solid 0.2em;
   text-transform: uppercase;
   text-align: center;
