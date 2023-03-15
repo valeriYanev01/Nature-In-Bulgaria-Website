@@ -9,12 +9,12 @@ const transformContent = (e) => {
   if (wrapperEl.style.display === "none") {
     wrapperEl.style.display = "block";
     additionalContentEl.style.display = "none";
+    e.currentTarget.innerText = "See more";
   } else {
     wrapperEl.style.display = "none";
     additionalContentEl.style.display = "block";
+    e.currentTarget.innerText = "See less";
   }
-  console.log(wrapperEl);
-  console.log(additionalContentEl);
 };
 
 firstButtonEl.addEventListener("click", transformContent);

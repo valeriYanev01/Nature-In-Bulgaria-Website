@@ -56,12 +56,6 @@ h1 {
   color: #5e957a;
 }
 
-.user--icon {
-  display: flex;
-  font-size: 2em;
-  gap: 5em;
-}
-
 .border {
   border: solid;
   height: 1.5em;
