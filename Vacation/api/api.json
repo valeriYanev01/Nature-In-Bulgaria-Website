@@ -1,8 +1,73 @@
 {
   "attractions": [
     {
-      "id": 1,
-      "locationName": "Rila"
+      "Vitosha": [
+        {
+          "locationName": "Zlatni Mostove",
+          "locationPhoto": "../../img/attractions--page/vitosha--zlatni-mostove.jpg",
+          "locationDescription": "Zlatnite Mostove is the largest stone river on Vitosha Mountain. The feature is situated in the valley of Vladayska River, extending 2.2 km, and up to 150 m wide, with several ‘tributary’ stone rivers. The stone river is ‘descending’ from elevation 1800 m above sea level in Boeritsa Chalet area to 1410 m at Zlatnite Mostove site. The lower extremity of the stone river is known as Zlatnite Mostove site, a popular tourist destination accessible from Sofia by road.The name ‘Golden Bridges’ derives from the golden colour of the lichens growing on the surface of stone run boulders."
+        },
+        {
+          "locationName": "Vitosha2",
+          "locationPhoto": "../../img/attractions--page/zlatni-mostove.jpg"
+        },
+        {
+          "locationName": "Vitosha3",
+          "locationPhoto": "../../img/attractions--page/zlatni-mostove.jpg"
+        },
+        {
+          "locationName": "Vitosha4",
+          "locationPhoto": "../../img/attractions--page/zlatni-mostove.jpg"
+        }
+      ]
+    },
+    {
+      "StaraPlanina": [
+        {
+          "locationName": "StaraPlanina"
+        },
+        {
+          "locationName": "StaraPlanina2"
+        },
+        {
+          "locationName": "StaraPlanina3"
+        },
+        {
+          "locationName": "StaraPlanina4"
+        }
+      ]
+    },
+    {
+      "Rila": [
+        {
+          "locationName": "Rila"
+        },
+        {
+          "locationName": "Rila2"
+        },
+        {
+          "locationName": "Rila3"
+        },
+        {
+          "locationName": "Rila4"
+        }
+      ]
+    },
+    {
+      "Pirin": [
+        {
+          "locationName": "Pirin"
+        },
+        {
+          "locationName": "Pirin2"
+        },
+        {
+          "locationName": "Pirin3"
+        },
+        {
+          "locationName": "Pirin4"
+        }
+      ]
     }
   ]
 }

@@ -78,3 +78,45 @@ h1 {
   row-gap: 1em;
   justify-items: center;
 }
+
+.locationWrapper {
+  display: grid;
+  width: 95vw;
+  margin: auto;
+  grid-template-columns: 45% 45%;
+  gap: 5em;
+  padding: 1em;
+  justify-content: end;
+  align-items: center;
+  justify-items: center;
+  line-height: 1.8;
+  letter-spacing: 0.2em;
+  border: 0.3em solid #76ba99;
+}
+
+.locationPhoto {
+  width: 450px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 1;
+}
+
+.locationName {
+  display: flex;
+  color: #76ba99;
+  margin-top: 2em;
+  font-size: 2em;
+  text-align: center;
+  border-right: 0.2em solid;
+  border-left: 0.2em solid;
+  border-top: 0.2em solid;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 5px;
+}
+
+.locationDescription {
+}
