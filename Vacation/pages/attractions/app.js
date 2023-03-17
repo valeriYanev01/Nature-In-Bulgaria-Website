@@ -28,7 +28,7 @@ const printAttractions = (attractionName, data, counter) => {
   keys = data.attractions[counter];
   for (const attraction of data.attractions[counter][attractionName]) {
     createAttractions(attraction);
-    sortAttractions();
+    sortAttractions(keys, counter);
   }
 };
 
@@ -42,38 +42,39 @@ const createAttractions = (attraction) => {
   locationPhoto.src = attraction.locationPhoto;
   locationDescription.textContent = attraction.locationDescription;
 
-  locationWrapper.setAttribute("class", "locationWrapper");
   locationName.setAttribute("class", "locationName");
-  locationPhoto.setAttribute("class", "locationPhoto");
-  locationDescription.setAttribute("class", "locationDescription");
+  locationWrapper.setAttribute("class", "locationWrapper");
+
+  if (attraction.id % 2 == 0) {
+    locationPhoto.setAttribute("class", "locationPhoto--left");
+    locationDescription.setAttribute("class", "locationDescription--right locationDescription--style");
+  } else {
+    locationPhoto.setAttribute("class", "locationPhoto--right");
+    locationDescription.setAttribute("class", "locationDescription--left locationDescription--style");
+  }
 };
-console.log(locationWrapper);
-const sortAttractions = () => {
-  if (Object.keys(keys)[0] === "Vitosha") {
-    vitoshaEl.appendChild(locationName);
-    vitoshaEl.appendChild(locationWrapper);
-    locationWrapper.appendChild(locationPhoto);
-    locationWrapper.appendChild(locationDescription);
+
+const sortAttractions = (keys, counter) => {
+  if (Object.keys(keys)[counter] === "Vitosha") {
+    filterAttractions(vitoshaEl, locationName, locationWrapper, locationDescription, locationPhoto);
   }
 
   if (Object.keys(keys)[0] === "StaraPlanina") {
-    StaraPlaninaEl.appendChild(locationName);
-    StaraPlaninaEl.appendChild(locationWrapper);
-    locationWrapper.appendChild(locationPhoto);
-    locationWrapper.appendChild(locationDescription);
+    filterAttractions(StaraPlaninaEl, locationName, locationWrapper, locationDescription, locationPhoto);
   }
 
   if (Object.keys(keys)[0] === "Rila") {
-    rilaEl.appendChild(locationName);
-    rilaEl.appendChild(locationWrapper);
-    locationWrapper.appendChild(locationPhoto);
-    locationWrapper.appendChild(locationDescription);
+    filterAttractions(rilaEl, locationName, locationWrapper, locationDescription, locationPhoto);
   }
 
   if (Object.keys(keys)[0] === "Pirin") {
-    pirinEl.appendChild(locationName);
-    pirinEl.appendChild(locationWrapper);
-    locationWrapper.appendChild(locationPhoto);
-    locationWrapper.appendChild(locationDescription);
+    filterAttractions(pirinEl, locationName, locationWrapper, locationDescription, locationPhoto);
   }
+};
+
+const filterAttractions = (locationEl, locationName, locationWrapper, locationDescription, locationPhoto) => {
+  locationEl.appendChild(locationName);
+  locationEl.appendChild(locationWrapper);
+  locationWrapper.appendChild(locationDescription);
+  locationWrapper.appendChild(locationPhoto);
 };

@@ -3,36 +3,47 @@
     {
       "Vitosha": [
         {
-          "locationName": "Zlatni Mostove",
+          "id": 1,
+          "locationName": "Zlatnite Mostove",
           "locationPhoto": "../../img/attractions--page/vitosha--zlatni-mostove.jpg",
           "locationDescription": "Zlatnite Mostove is the largest stone river on Vitosha Mountain. The feature is situated in the valley of Vladayska River, extending 2.2 km, and up to 150 m wide, with several ‘tributary’ stone rivers. The stone river is ‘descending’ from elevation 1800 m above sea level in Boeritsa Chalet area to 1410 m at Zlatnite Mostove site. The lower extremity of the stone river is known as Zlatnite Mostove site, a popular tourist destination accessible from Sofia by road.The name ‘Golden Bridges’ derives from the golden colour of the lichens growing on the surface of stone run boulders."
         },
         {
-          "locationName": "Vitosha2",
-          "locationPhoto": "../../img/attractions--page/zlatni-mostove.jpg"
+          "id": 2,
+          "locationName": "Kopitoto",
+          "locationPhoto": "../../img/attractions--page/vitosha--kopitoto.jpg",
+          "locationDescription": "Kopitoto area, also known as the Kopitoto peak, is located in the Vitosha mountain, which is located just above the city of Sofia. On Kopitoto, which rises over 1,340 meters high, there is the television tower, which is over one hundred and eighty meters high. From the area Kopitoto there is a magnificent panoramic view of the capital Sofia. Kopitoto can be reached on foot from the foot of Vitosha Mountain, but it can also be reached by car. It depends on what the goal is - tourists don't mind the two-hour trek and many residents of the capital climb on their free days. The walk is easy as the paths are marked."
         },
         {
-          "locationName": "Vitosha3",
-          "locationPhoto": "../../img/attractions--page/zlatni-mostove.jpg"
+          "id": 3,
+          "locationName": "Boyana Waterfall",
+          "locationPhoto": "../../img/attractions--page/vitosha--boyana-waterfall.jpg",
+          "locationDescription": "Boyana Waterfall is the largest waterfall in the Vitosha mountain, 25 meters high. It was formed by the waters of the Boyanska river, which steeply descends on the northern slopes, passing through the andesite belt of the mountain. The stable rock conditions the many rapids along the river and the creation of the waterfall at 1260 m above sea level. (the base of the waterfall) as well as other smaller falls and waterfalls. On clear spring days, the waterfall can be seen from the center of Sofia. It is at its fullest during the melting of the snows in the higher parts of Vitosha, then its white band stands out among the still leafless forest. In winter, on the coldest days, the waterfall freezes due to its location in a wet and deep valley."
         },
         {
-          "locationName": "Vitosha4",
-          "locationPhoto": "../../img/attractions--page/zlatni-mostove.jpg"
+          "id": 4,
+          "locationName": "Boyana Church",
+          "locationPhoto": "../../img/attractions--page/vitosha--boyana-church.jpg",
+          "locationDescription": "Boyana Church \"St. St. Nicholas and Panteleimon\" is a medieval Bulgarian church in the Sofia district of Boyana, located at the foot of Vitosha. It is one of the cultural symbols of Bulgaria and was included in 1979 as a cultural monument in the UNESCO World Cultural and Natural Heritage List. The temple is two-storied. It refers to the type of two-story church-tombs with a lower floor intended for a crypt (tomb) and an upper floor for a family chapel. It consists of three buildings, built at different times, which are connected in one whole. The world-famous wall paintings from 1259 by the Boyan master and his group of medieval artists have exceptional artistic merits. Among them are Dimitriy Zograf and Vasiliy Zograf."
         }
       ]
     },
     {
       "StaraPlanina": [
         {
+          "id": 5,
           "locationName": "StaraPlanina"
         },
         {
+          "id": 6,
           "locationName": "StaraPlanina2"
         },
         {
+          "id": 7,
           "locationName": "StaraPlanina3"
         },
         {
+          "id": 8,
           "locationName": "StaraPlanina4"
         }
       ]
@@ -40,15 +51,19 @@
     {
       "Rila": [
         {
+          "id": 9,
           "locationName": "Rila"
         },
         {
+          "id": 10,
           "locationName": "Rila2"
         },
         {
+          "id": 11,
           "locationName": "Rila3"
         },
         {
+          "id": 12,
           "locationName": "Rila4"
         }
       ]
@@ -56,15 +71,19 @@
     {
       "Pirin": [
         {
+          "id": 13,
           "locationName": "Pirin"
         },
         {
+          "id": 14,
           "locationName": "Pirin2"
         },
         {
+          "id": 15,
           "locationName": "Pirin3"
         },
         {
+          "id": 16,
           "locationName": "Pirin4"
         }
       ]

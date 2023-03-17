@@ -66,22 +66,93 @@ h1 {
   margin-bottom: 0.4em;
 }
 
-.content {
-  display: flex;
-  max-width: 100%;
+.vitosha--parallax {
+  background-image: url("../../img/attractions--page/vitosha--parallax.jpg");
+  height: 42vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.content--img--container {
-  display: grid;
-  margin: 2em auto;
-  grid-template-columns: 40em 40em;
-  row-gap: 1em;
-  justify-items: center;
+.vitosha--parallax--text {
+  text-align: center;
+  position: absolute;
+  padding: 0.25em 0 0.25em 0;
+  font-size: 4em;
+  width: 98.9vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -120%);
+  background-color: rgba(255, 255, 255, 0.2);
+  resize: none;
+  text-transform: uppercase;
+}
+
+.stara-planina--parallax {
+  background-image: url("../../img/attractions--page/stara-planina--parallax.jpg");
+}
+
+.rila--parallax {
+  background-image: url("../../img/attractions--page/rila--parallax.jpg");
+}
+
+.pirin--parallax {
+  background-image: url("../../img/attractions--page/pirin--parallax.jpg");
+}
+
+.stara-planina--parallax,
+.rila--parallax,
+.pirin--parallax {
+  height: 50vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stara-planina--parallax--text,
+.rila--parallax--text,
+.pirin--parallax--text {
+  text-align: center;
+  position: absolute;
+  padding: 0.25em 0 0.25em 0;
+  font-size: 4em;
+  width: 98.9vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  resize: none;
+  transform: translate(0%, 120%);
+  text-transform: uppercase;
+}
+
+.description {
+  width: 95vw;
+  margin: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2em;
+  word-spacing: 2px;
+}
+
+.description--firstWord {
+  color: #76ba99;
+  font-weight: bold;
+  font-size: 2em;
+  float: left;
+  line-height: 40px;
+  padding-right: 6px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  position: relative;
+  left: 5px;
 }
 
 .locationWrapper {
   display: grid;
   width: 95vw;
+  height: 20em;
   margin: auto;
   grid-template-columns: 45% 45%;
   gap: 5em;
@@ -91,13 +162,8 @@ h1 {
   justify-items: center;
   line-height: 1.8;
   letter-spacing: 0.2em;
-  border: 0.3em solid #76ba99;
-}
-
-.locationPhoto {
-  width: 450px;
-  grid-column: 2 / 3;
-  grid-row: 1 / 1;
+  border-top: 0.3em solid #76ba99;
+  margin-bottom: 2em;
 }
 
 .locationName {
@@ -111,12 +177,37 @@ h1 {
   border-top: 0.2em solid;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 15%;
+  width: 17%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   top: 5px;
 }
 
+.locationPhoto--right {
+  width: 500px;
+  height: 350px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 1;
+}
+
+.locationPhoto--left {
+  width: 500px;
+  height: 350px;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
 .locationDescription {
+}
+
+.locationDescription--right::first-letter,
+.locationDescription--left::first-letter {
+  color: #76ba99;
+  font-weight: bold;
+  font-size: 3.5em;
+  float: left;
+  line-height: 60px;
+  padding-right: 8px;
+  margin-top: -3px;
 }
