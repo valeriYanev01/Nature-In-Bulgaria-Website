@@ -80,7 +80,7 @@ h1 {
 .arrows path {
   stroke: #76ba99;
   fill: transparent;
-  stroke-width: 2px;
+  stroke-width: 3px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
