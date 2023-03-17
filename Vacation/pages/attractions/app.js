@@ -4,12 +4,16 @@ const StaraPlaninaEl = document.querySelector(".staraPlanina");
 const rilaEl = document.querySelector(".rila");
 const pirinEl = document.querySelector(".pirin");
 
+const scrollEl = document.querySelector(".scroll");
+
 let keys;
 
 let locationWrapper;
 let locationName;
 let locationPhoto;
 let locationDescription;
+
+let zlatniMostoveID;
 
 async function fetchAttractions() {
   const response = await fetch("../.././api/api.json");
@@ -52,6 +56,10 @@ const createAttractions = (attraction) => {
     locationPhoto.setAttribute("class", "locationPhoto--right");
     locationDescription.setAttribute("class", "locationDescription--left locationDescription--style");
   }
+
+  if (locationName.innerText === "Zlatnite Mostove") {
+    locationName.setAttribute("id", "zlatniMostoveID");
+  }
 };
 
 const sortAttractions = (keys, counter) => {
@@ -78,3 +86,10 @@ const filterAttractions = (locationEl, locationName, locationWrapper, locationDe
   locationWrapper.appendChild(locationDescription);
   locationWrapper.appendChild(locationPhoto);
 };
+
+setTimeout(() => {
+  zlatniMostoveID = document.getElementById("zlatniMostoveID");
+  scrollEl.addEventListener("click", function () {
+    zlatniMostoveID.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  });
+}, 1000);
