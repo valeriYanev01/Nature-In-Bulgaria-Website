@@ -36,6 +36,9 @@ fetchAttractions()
     arrowsEl.style.display = "none";
     errorEl.textContent = error;
     errorEl.style.display = "block";
+    StaraPlaninaEl.style.display = "none";
+    rilaEl.style.display = "none";
+    pirinEl.style.display = "none";
   });
 
 const printAttractions = (attractionName, data, counter) => {
@@ -103,4 +106,4 @@ setTimeout(() => {
   scrollEl.addEventListener("click", function () {
     zlatniMostoveID.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-}, 1500);
+}, 1000);
