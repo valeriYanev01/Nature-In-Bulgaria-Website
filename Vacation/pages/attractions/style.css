@@ -275,9 +275,6 @@ h1 {
   grid-row: 1 / 1;
 }
 
-.locationDescription {
-}
-
 .locationDescription--right::first-letter,
 .locationDescription--left::first-letter {
   color: #76ba99;
@@ -287,4 +284,64 @@ h1 {
   line-height: 60px;
   padding-right: 8px;
   margin-top: -3px;
+}
+
+.footer {
+  height: 10em;
+  background-color: #343a40;
+  display: flex;
+}
+
+.footer--nature--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: #fff;
+  font-size: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 1em;
+  margin-left: 1em;
+  border-right: 5px solid;
+}
+
+.footer--links {
+  background: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2em;
+}
+
+.footer--link {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.footer--github-link {
+  background: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3em;
+}
+
+.footer--github-logo {
+  width: 48px;
+  background: none;
+  border-right: 5px solid;
+  margin: 0.5em;
+  padding: 0.1em;
+  border: 1px solid #fff;
+  border-radius: 300px;
+}
+
+.footer--copyright {
+  text-transform: uppercase;
+  background: none;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  margin-left: 7em;
 }
