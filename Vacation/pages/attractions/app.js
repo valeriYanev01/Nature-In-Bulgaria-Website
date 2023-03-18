@@ -43,7 +43,7 @@ fetchAttractions()
 
 const printAttractions = (attractionName, data, counter) => {
   keys = data.record.attractions[counter];
-  for (const attraction of data.record.attractions[counter][attractionName]) {
+  for (const attraction of keys[attractionName]) {
     createAttractions(attraction);
     sortAttractions(keys, counter);
   }
