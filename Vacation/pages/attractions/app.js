@@ -3,8 +3,11 @@ const vitoshaEl = document.querySelector(".vitosha");
 const StaraPlaninaEl = document.querySelector(".staraPlanina");
 const rilaEl = document.querySelector(".rila");
 const pirinEl = document.querySelector(".pirin");
-
 const scrollEl = document.querySelector(".scroll");
+const arrowsEl = document.querySelector(".arrows");
+const errorEl = document.querySelector(".error");
+
+scrollEl.style.display = "none";
 
 let keys;
 
@@ -16,21 +19,28 @@ let locationDescription;
 let zlatniMostoveID;
 
 async function fetchAttractions() {
-  const response = await fetch("../.././api/api.json");
+  const response = await fetch("https://api.jsonbin.io/v3/b/641553d5ebd26539d090b2e6");
   const attractions = await response.json();
   return attractions;
 }
 
-fetchAttractions().then((attractionData) => {
-  printAttractions("Vitosha", attractionData, 0);
-  printAttractions("StaraPlanina", attractionData, 1);
-  printAttractions("Rila", attractionData, 2);
-  printAttractions("Pirin", attractionData, 3);
-});
+fetchAttractions()
+  .then((attractionData) => {
+    printAttractions("Vitosha", attractionData, 0);
+    printAttractions("StaraPlanina", attractionData, 1);
+    printAttractions("Rila", attractionData, 2);
+    printAttractions("Pirin", attractionData, 3);
+  })
+  .catch((error) => {
+    console.error(error);
+    arrowsEl.style.display = "none";
+    errorEl.textContent = error;
+    errorEl.style.display = "block";
+  });
 
 const printAttractions = (attractionName, data, counter) => {
-  keys = data.attractions[counter];
-  for (const attraction of data.attractions[counter][attractionName]) {
+  keys = data.record.attractions[counter];
+  for (const attraction of data.record.attractions[counter][attractionName]) {
     createAttractions(attraction);
     sortAttractions(keys, counter);
   }
@@ -88,8 +98,9 @@ const filterAttractions = (locationEl, locationName, locationWrapper, locationDe
 };
 
 setTimeout(() => {
+  scrollEl.style.display = "block";
   zlatniMostoveID = document.getElementById("zlatniMostoveID");
   scrollEl.addEventListener("click", function () {
-    zlatniMostoveID.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    zlatniMostoveID.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-}, 1000);
+}, 1500);
