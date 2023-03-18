@@ -66,6 +66,19 @@ h1 {
   margin-bottom: 0.4em;
 }
 
+.error {
+  display: none;
+  width: 80vw;
+  height: 72px;
+  position: absolute;
+  transform: translate(25%);
+  margin-left: -30px;
+  top: 5em;
+  background: none;
+  font-size: 2em;
+  font-weight: 900;
+}
+
 .arrows {
   width: 60px;
   height: 72px;
