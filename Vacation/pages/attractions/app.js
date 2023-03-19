@@ -7,16 +7,24 @@ const scrollEl = document.querySelector(".scroll");
 const arrowsEl = document.querySelector(".arrows");
 const errorEl = document.querySelector(".error");
 
-scrollEl.style.display = "none";
+const arrowsVitoshaEl = document.querySelector(".arrows--vitosha");
+const arrowsStaraPlaninaEl = document.querySelector(".arrows--staraPlanina");
+const arrowsRilaEl = document.querySelector(".arrows--rila");
+const arrowsPirinEl = document.querySelector(".arrows--pirin");
 
-let keys;
+let zlatniMostoveID;
+let buzludjaPeakID;
+let rilskiManastirID;
+let vihrenPeakID;
 
 let locationWrapper;
 let locationName;
 let locationPhoto;
 let locationDescription;
 
-let zlatniMostoveID;
+let keys;
+
+let imagesList = [];
 
 async function fetchAttractions() {
   const response = await fetch("https://api.jsonbin.io/v3/b/641553d5ebd26539d090b2e6");
@@ -45,7 +53,7 @@ const printAttractions = (attractionName, data, counter) => {
   keys = data.record.attractions[counter];
   for (const attraction of keys[attractionName]) {
     createAttractions(attraction);
-    sortAttractions(keys, counter);
+    sortAttractions(keys);
   }
 };
 
@@ -63,20 +71,32 @@ const createAttractions = (attraction) => {
   locationWrapper.setAttribute("class", "locationWrapper");
 
   if (attraction.id % 2 == 0) {
-    locationPhoto.setAttribute("class", "locationPhoto--left");
+    locationPhoto.setAttribute("class", "locationPhoto locationPhoto--left");
     locationDescription.setAttribute("class", "locationDescription--right locationDescription--style");
   } else {
-    locationPhoto.setAttribute("class", "locationPhoto--right");
+    locationPhoto.setAttribute("class", "locationPhoto locationPhoto--right");
     locationDescription.setAttribute("class", "locationDescription--left locationDescription--style");
   }
 
   if (locationName.innerText === "Zlatnite Mostove") {
     locationName.setAttribute("id", "zlatniMostoveID");
   }
+
+  if (locationName.innerText === "Buzludzha Peak") {
+    locationName.setAttribute("id", "buzludzhaPeakID");
+  }
+
+  if (locationName.innerText === "Rilski Manastir") {
+    locationName.setAttribute("id", "rilskiManastirID");
+  }
+
+  if (locationName.innerText === "Vihren Peak") {
+    locationName.setAttribute("id", "vihrenPeakID");
+  }
 };
 
-const sortAttractions = (keys, counter) => {
-  if (Object.keys(keys)[counter] === "Vitosha") {
+const sortAttractions = (keys) => {
+  if (Object.keys(keys)[0] === "Vitosha") {
     filterAttractions(vitoshaEl, locationName, locationWrapper, locationDescription, locationPhoto);
   }
 
@@ -100,10 +120,28 @@ const filterAttractions = (locationEl, locationName, locationWrapper, locationDe
   locationWrapper.appendChild(locationPhoto);
 };
 
+scrollEl.style.display = "none";
+
 setTimeout(() => {
   scrollEl.style.display = "block";
   zlatniMostoveID = document.getElementById("zlatniMostoveID");
-  scrollEl.addEventListener("click", function () {
-    zlatniMostoveID.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+  buzludjaPeakID = document.getElementById("buzludzhaPeakID");
+  rilskiManastirID = document.getElementById("rilskiManastirID");
+  vihrenPeakID = document.getElementById("vihrenPeakID");
+
+  console.log(zlatniMostoveID.offsetTop);
+
+  addEventsToElements(arrowsVitoshaEl, zlatniMostoveID);
+  addEventsToElements(arrowsStaraPlaninaEl, buzludjaPeakID);
+  addEventsToElements(arrowsRilaEl, rilskiManastirID);
+  addEventsToElements(arrowsPirinEl, vihrenPeakID);
 }, 1000);
+
+const addEventsToElements = (el, id) => {
+  el.addEventListener("click", function () {
+    window.scrollTo({
+      behavior: "smooth",
+      top: id.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80,
+    });
+  });
+};
