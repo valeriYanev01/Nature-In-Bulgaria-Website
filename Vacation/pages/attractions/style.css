@@ -9,6 +9,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 7.5em;
+}
+
+.hide {
+  display: none;
 }
 
 h1 {
@@ -85,9 +93,29 @@ h1 {
   position: absolute;
   left: 50%;
   margin-left: -30px;
-  bottom: 20px;
+  top: 620px;
   background: none;
   cursor: pointer;
+}
+
+.staraPlanina {
+  position: relative;
+}
+#arrowsStaraPlanina {
+  position: absolute;
+}
+
+.rila {
+  position: relative;
+}
+#arrowsRila {
+  position: absolute;
+}
+.pirin {
+  position: relative;
+}
+#arrowsPirin {
+  position: absolute;
 }
 
 .arrows path {
@@ -113,7 +141,7 @@ h1 {
   }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/ {
+@-webkit-keyframes arrow {
   0% {
     opacity: 0;
   }
@@ -130,22 +158,22 @@ h1 {
 
 .arrows path.a1 {
   animation-delay: -1s;
-  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+  -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
   animation-delay: -0.5s;
-  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+  -webkit-animation-delay: -0.5s;
 }
 
 .arrows path.a3 {
   animation-delay: 0s;
-  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+  -webkit-animation-delay: 0s;
 }
 
 .vitosha--parallax {
   background-image: url("../../img/attractions--page/vitosha--parallax.jpg");
-  height: 42vw;
+  height: 49vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -342,6 +370,5 @@ h1 {
   color: #fff;
   margin-top: auto;
   margin-bottom: 2em;
-  margin-right: 1em;
-  margin-left: 7em;
+  margin-left: 12em;
 }

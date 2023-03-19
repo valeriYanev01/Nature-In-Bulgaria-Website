@@ -16,6 +16,10 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 7.5em;
 }
 
 h1 {
@@ -84,6 +88,7 @@ h1 {
   margin-right: auto;
   width: 80vw;
   height: 50vh;
+  padding-top: 7em;
 }
 
 .text {
@@ -97,7 +102,7 @@ h1 {
   right: 50%;
   background: none;
   color: #343a40;
-  transform: translate(50.52%, -50%);
+  transform: translate(50.52%);
   background-color: rgba(255, 255, 255, 0.5);
   background-size: auto;
   resize: none;
@@ -107,7 +112,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 10em;
   height: 27vh;
   gap: 10em;
   align-content: space-between;
@@ -165,6 +170,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
+  margin-bottom: 5em;
   height: 28em;
 }
 
@@ -177,7 +183,7 @@ h1 {
   width: 20%;
   overflow: hidden;
   height: 94%;
-  box-shadow: 1em 2em 1em 0.3em rgba(52, 58, 64, 0.2);
+  box-shadow: 1em 1em 1em 0.3em rgba(52, 58, 64, 0.2);
   transform: translate(0.05em, -0.05em);
 }
 
@@ -195,18 +201,18 @@ h1 {
 
 @keyframes enlarge {
   100% {
-    box-shadow: 0.7em 1.5em 0.7em 0.2em rgba(52, 58, 64, 0.2);
+    box-shadow: 0.7em 0.5em 0.7em 0.2em rgba(52, 58, 64, 0.25);
     transform: translate(0.2em, -0.2em);
   }
 }
 
 @keyframes decrement {
   100% {
-    box-shadow: 0.7em 1.5em 0.7em 0.2em rgba(52, 58, 64, 0.2);
+    box-shadow: 0.7em 0.5em 0.7em 0.2em rgba(52, 58, 64, 0.25);
     transform: translate(0.2em, -0.2em);
   }
   0% {
-    box-shadow: 1em 2em 1em 0.3em rgba(52, 58, 64, 0.2);
+    box-shadow: 1em 1em 1em 0.3em rgba(52, 58, 64, 0.2);
     transform: translate(0.05em, -0.05em);
   }
 }
