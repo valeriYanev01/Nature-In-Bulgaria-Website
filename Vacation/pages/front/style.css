@@ -171,6 +171,44 @@ h1 {
   height: 28em;
 }
 
+.front--intro--first {
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(52, 58, 64, 0.05);
+  justify-content: space-between;
+}
+
+.front--info--first--text {
+  margin: 1em;
+  padding: 1em;
+  color: #343a40;
+  background: rgba(52, 58, 64, 0.01);
+  font-size: 1.4em;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  width: 55%;
+}
+
+.front--info--first--text--bulgaria {
+  background: rgba(52, 58, 64, 0.01);
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.front--info--first--img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 3em;
+  margin-right: 1.8em;
+}
+
+.intro {
+  border-top: solid #343a40 4px;
+  border-radius: 200px;
+}
+
 .front--info--el {
   margin: 1em;
   border: solid #343a40 0.3em;

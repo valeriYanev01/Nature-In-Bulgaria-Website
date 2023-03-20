@@ -6,14 +6,15 @@
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  position: fixed;
-  transition: 0.2s;
+  transition: 0.4s;
   width: 100%;
   z-index: 99;
   height: 5.5em;
+  padding: 10px 0;
 }
 
 .hide {
