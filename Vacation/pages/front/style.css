@@ -13,13 +13,15 @@ html {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  position: fixed;
+  transition: 0.4s;
   width: 100%;
   z-index: 99;
-  height: 7.5em;
+  height: 5.5em;
+  padding: 10px 0;
 }
 
 h1 {
@@ -60,15 +62,8 @@ h1 {
   color: #5e957a;
 }
 
-.border {
-  border: solid;
-  height: 1.5em;
-  width: 98%;
-  background: #343a40;
-  border-radius: 0.3em;
-  margin-bottom: 0.5em;
-  margin: auto;
-  margin-bottom: 0.4em;
+.seperate {
+  padding-top: 7em;
 }
 
 .main {
@@ -80,6 +75,8 @@ h1 {
   max-width: 80%;
   height: 50vh;
   margin: auto;
+  border-top: solid #343a40 0.2em;
+  border-width: thin;
 }
 
 .front-page-img {
@@ -88,7 +85,7 @@ h1 {
   margin-right: auto;
   width: 80vw;
   height: 50vh;
-  padding-top: 7em;
+  margin-top: 1em;
 }
 
 .text {
@@ -102,7 +99,7 @@ h1 {
   right: 50%;
   background: none;
   color: #343a40;
-  transform: translate(50.52%);
+  transform: translate(50.52%, -50%);
   background-color: rgba(255, 255, 255, 0.5);
   background-size: auto;
   resize: none;
@@ -112,7 +109,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 10em;
+  margin-top: 3em;
   height: 27vh;
   gap: 10em;
   align-content: space-between;

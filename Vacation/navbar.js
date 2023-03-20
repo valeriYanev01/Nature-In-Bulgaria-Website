@@ -1,5 +1,4 @@
 const navbarEl = document.querySelector(".navbar");
-const navbarBorderEl = document.querySelector(".border");
 const h1El = document.querySelector("h1");
 const h1LinkEl = document.querySelector(".h1--link");
 const navLinksEl = document.querySelector(".nav--links");
@@ -14,11 +13,11 @@ window.onscroll = function () {
 };
 
 const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    navbarBorderEl.style.display = "none";
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     navbarEl.style.height = "5em";
     navbarEl.style.opacity = "0.9";
     navbarEl.style.backgroundColor = "#343a40";
+    navbarEl.style.padding = "0";
 
     h1El.style.backgroundColor = "#343a40";
     h1LinkEl.style.color = "#fff";
@@ -38,10 +37,10 @@ const scrollFunction = () => {
     linkFourthEl.style.color = "#fff";
     linkFifthEl.style.color = "#fff";
   } else {
-    navbarBorderEl.style.display = "block";
-    navbarEl.style.height = "7.5em";
+    navbarEl.style.height = "5.5em";
     navbarEl.style.opacity = "1";
     navbarEl.style.backgroundColor = "#fff";
+    navbarEl.style.padding = "10px 0";
 
     h1El.style.backgroundColor = "#fff";
     h1LinkEl.style.color = "#343a40";

@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   align-items: center;
   position: fixed;
+  transition: 0.2s;
   width: 100%;
   z-index: 99;
   height: 7.5em;
@@ -61,17 +62,6 @@ h1 {
   display: flex;
   font-size: 2em;
   gap: 5em;
-}
-
-.border {
-  border: solid;
-  height: 1.5em;
-  width: 98%;
-  background: #343a40;
-  border-radius: 0.3em;
-  margin-bottom: 0.5em;
-  margin: auto;
-  margin-bottom: 0.4em;
 }
 
 .error {
