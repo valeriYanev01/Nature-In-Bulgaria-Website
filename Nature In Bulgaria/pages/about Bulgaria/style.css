@@ -71,7 +71,7 @@ h1 {
   background: rgba(52, 58, 64, 0.05);
 }
 
-.information--header {
+.information--header--nature {
   background-image: url("../../img/aboutBulgaria/background.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -80,7 +80,7 @@ h1 {
   margin-top: 2.62em;
 }
 
-.information--header--h3 {
+.information--header--h3--nature {
   background: none;
   font-size: 5em;
   color: #fff;
@@ -99,20 +99,61 @@ h1 {
   border-radius: 200px;
   backdrop-filter: blur(2px);
   cursor: pointer;
+  overflow: hidden;
 }
 
-.information--expand {
+.information--text--nature {
+  background: none;
+  font-size: 1.2em;
+  margin: 1em;
+}
+
+.information--header--sea {
+  background-image: url("../../img/aboutBulgaria/about-background-sea.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 10em 2em 2em 2em;
+  margin-top: 2.62em;
+}
+
+.information--header--h3--sea {
+  background: none;
+  font-size: 5em;
+  color: #fff;
+}
+
+.information--button--sea {
   display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  bottom: 20px;
+  padding: 0.4em;
+  background: none;
+  border: 0.1em solid #343a40;
+  border-radius: 200px;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.information--text--sea {
+  background: none;
+  font-size: 1.2em;
+  margin: 1em;
 }
 
 .information--shrink {
-  display: none;
+  max-height: 80px;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
 }
 
-.information--text {
-  background: none;
-  font-size: 1.3em;
-  margin: 1em;
+.information--expand {
+  max-height: 4000px;
+  transition: max-height 0.5s ease-in;
 }
 
 .footer {
