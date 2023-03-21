@@ -15,7 +15,7 @@ const nature = () => {
     showHideContent(informationNatureTextEl);
     window.scrollTo({
       behavior: "smooth",
-      top: -500,
+      top: 30,
     });
   } else if (informationNatureTextEl.classList.contains("information--shrink")) {
     showHideContent(informationNatureTextEl);
