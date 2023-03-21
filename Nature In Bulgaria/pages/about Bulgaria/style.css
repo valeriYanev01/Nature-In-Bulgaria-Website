@@ -1,0 +1,153 @@
+* {
+  color: #343a40;
+  background-color: #f8fafc;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 0.4s;
+  width: 99.92%;
+  z-index: 99;
+  height: 5.5em;
+  padding: 10px 0;
+  border-bottom: 3px solid #343a40;
+  border-width: thin;
+  overflow-anchor: none;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.h1--link {
+  text-decoration: none;
+}
+
+.nav--links {
+  display: flex;
+  gap: 2em;
+  margin-left: auto;
+  position: relative;
+  right: 5em;
+}
+
+.nav--link:link,
+:visited {
+  font-size: 1.5em;
+  text-decoration: none;
+  gap: 2em;
+}
+
+.nav--link--deal {
+  color: #76ba99;
+}
+
+.nav--link--deal:hover {
+  color: #5e957a;
+}
+
+.nav--link--deal:active {
+  color: #5e957a;
+}
+
+.information {
+  display: block;
+  background: rgba(52, 58, 64, 0.05);
+}
+
+.information--header {
+  background-image: url("../../img/aboutBulgaria/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 10em 2em 2em 2em;
+  margin-top: 2.62em;
+}
+
+.information--header--h3 {
+  background: none;
+  font-size: 5em;
+  color: #fff;
+}
+
+.information--text {
+  background: none;
+  font-size: 1.3em;
+  margin: 1em;
+}
+
+.footer {
+  height: 10em;
+  background-color: #343a40;
+  display: flex;
+}
+
+.footer--nature--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: none;
+  color: #fff;
+  font-size: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 1em;
+  margin-left: 1em;
+  border-right: 5px solid;
+}
+
+.footer--links {
+  background: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2em;
+}
+
+.footer--link {
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.footer--github-link {
+  background: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3em;
+}
+
+.footer--github-logo {
+  width: 48px;
+  background: none;
+  border-right: 5px solid;
+  margin: 0.5em;
+  padding: 0.1em;
+  border: 1px solid #fff;
+  border-radius: 300px;
+}
+
+.footer--copyright {
+  text-transform: uppercase;
+  background: none;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  margin-left: 7em;
+}
