@@ -86,6 +86,29 @@ h1 {
   color: #fff;
 }
 
+.information--button--nature {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  bottom: 20px;
+  padding: 0.4em;
+  background: none;
+  border: 0.1em solid #343a40;
+  border-radius: 200px;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+}
+
+.information--expand {
+  display: block;
+}
+
+.information--shrink {
+  display: none;
+}
+
 .information--text {
   background: none;
   font-size: 1.3em;
