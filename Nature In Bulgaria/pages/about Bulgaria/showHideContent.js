@@ -18,11 +18,15 @@ const nature = () => {
       top: 30,
     });
   } else if (informationNatureTextEl.classList.contains("information--shrink")) {
-    showHideContent(informationNatureTextEl);
-    window.scrollTo({
-      behavior: "smooth",
-      top: 170,
-    });
+    informationSeaTextEl.classList.remove("information--expand");
+    informationSeaTextEl.classList.add("information--shrink");
+    setTimeout(() => {
+      showHideContent(informationNatureTextEl);
+      window.scrollTo({
+        behavior: "smooth",
+        top: 170,
+      });
+    }, 400);
   }
 };
 
