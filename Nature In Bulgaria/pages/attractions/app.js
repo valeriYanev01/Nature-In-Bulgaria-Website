@@ -139,9 +139,16 @@ setTimeout(() => {
 
 const addEventsToElements = (el, id) => {
   el.addEventListener("click", function () {
-    window.scrollTo({
-      behavior: "smooth",
-      top: id.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80,
-    });
+    if (id.id == "zlatniMostoveID") {
+      window.scrollTo({
+        behavior: "smooth",
+        top: id.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 110,
+      });
+    } else {
+      window.scrollTo({
+        behavior: "smooth",
+        top: id.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 80,
+      });
+    }
   });
 };
