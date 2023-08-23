@@ -129,8 +129,6 @@ setTimeout(() => {
   rilskiManastirID = document.getElementById("rilskiManastirID");
   vihrenPeakID = document.getElementById("vihrenPeakID");
 
-  console.log(zlatniMostoveID.offsetTop);
-
   addEventsToElements(arrowsVitoshaEl, zlatniMostoveID);
   addEventsToElements(arrowsStaraPlaninaEl, buzludjaPeakID);
   addEventsToElements(arrowsRilaEl, rilskiManastirID);

@@ -16,7 +16,7 @@ window.onscroll = function () {
 const scrollFunction = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     navbarEl.style.height = "5em";
-    navbarEl.style.opacity = "0.9";
+    navbarEl.style.opacity = "0.8";
     navbarEl.style.backgroundColor = "#343a40";
     navbarEl.style.padding = "0";
 

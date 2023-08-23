@@ -10,7 +10,6 @@ document.addEventListener("scroll", function () {
   ) {
     document.documentElement.scrollTo({ top: 0 });
   }
-  console.log(document.documentElement.scrollTop);
 });
 
 document.addEventListener("keydown", function (e) {
