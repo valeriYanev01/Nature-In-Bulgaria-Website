@@ -18,29 +18,32 @@ const nature = () => {
   if (informationNatureTextEl.classList.contains("information--expand")) {
     showHideContent(informationNatureTextEl, buttonNatureEl);
   } else if (informationNatureTextEl.classList.contains("information--shrink")) {
-    ButtonSeaEl.textContent = "Show More";
-    showHideContent(informationNatureTextEl, buttonNatureEl);
     informationSeaTextEl.classList.remove("information--expand");
     informationSeaTextEl.classList.add("information--shrink");
+    ButtonSeaEl.textContent = "Show More";
+    showHideContent(informationNatureTextEl, buttonNatureEl);
   }
 };
 
-const sea = () => {
+function sea() {
+  headerSeaEl.scrollIntoView({ behavior: "smooth", block: "center" });
   if (informationSeaTextEl.classList.contains("information--expand")) {
-    infoSeaIDEl.scrollIntoView({ behavior: "smooth", block: "center" });
     showHideContent(informationSeaTextEl, ButtonSeaEl);
   } else if (informationSeaTextEl.classList.contains("information--shrink")) {
-    if (informationNatureTextEl.classList.contains("information--expand")) {
-      infoSeaIDEl.scrollIntoView({ behavior: "smooth", block: "end" });
-    } else {
-      infoSeaIDEl.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
     buttonNatureEl.textContent = "Show More";
-    showHideContent(informationSeaTextEl, ButtonSeaEl);
+
+    if (informationNatureTextEl.classList.contains("information--expand")) {
+      setTimeout(() => {
+        showHideContent(informationSeaTextEl, ButtonSeaEl);
+      }, 500);
+    } else {
+      showHideContent(informationSeaTextEl, ButtonSeaEl);
+    }
+
     informationNatureTextEl.classList.remove("information--expand");
     informationNatureTextEl.classList.add("information--shrink");
   }
-};
+}
 
 function showHideContent(infoEl, btnEl) {
   if (infoEl.classList.contains("information--expand")) {

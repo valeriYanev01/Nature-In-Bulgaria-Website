@@ -58,3 +58,31 @@ h1 {
 .nav--link--deal:active {
   color: #5e957a;
 }
+
+.heading {
+  display: flex;
+  padding: 0;
+  max-width: 100%;
+}
+
+.heading-title {
+  text-align: center;
+  padding: 10px;
+}
+
+.heading-list {
+  list-style: none;
+}
+
+.heading--img {
+  padding: 2em 1em;
+  display: flex;
+  max-width: 100%;
+}
+
+.heading--img--list {
+  width: 360px;
+  list-style: none;
+  height: 200px;
+  padding: 0 2%;
+}

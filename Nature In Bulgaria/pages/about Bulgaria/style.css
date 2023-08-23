@@ -19,7 +19,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
   transition: 0.4s;
-  width: 99.92%;
+  width: 100%;
   z-index: 99;
   height: 5.5em;
   padding: 10px 0;
