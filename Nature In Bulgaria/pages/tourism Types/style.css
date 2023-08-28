@@ -5,6 +5,13 @@
   margin: 0;
 }
 
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -61,28 +68,119 @@ h1 {
 
 .heading {
   display: flex;
-  padding: 0;
-  max-width: 100%;
+  margin: 2em;
 }
 
 .heading-title {
+  font-size: 1.4em;
   text-align: center;
-  padding: 10px;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.heading-list {
+.heading-button {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.grid-list {
   list-style: none;
+  display: grid;
 }
 
-.heading--img {
-  padding: 2em 1em;
-  display: flex;
+.grid {
+  width: 100%;
+  height: 25%;
   max-width: 100%;
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 50px 150px;
+  list-style: none;
+  justify-items: center;
+  justify-content: center;
 }
 
-.heading--img--list {
-  width: 360px;
-  list-style: none;
+.hide {
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid--img--list {
+  width: 100%;
+  height: 250px;
+  max-height: 100%;
+  object-position: 35% 60%;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+.grid--img--list:hover {
+  animation-name: enlarge;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.grid--img--list:not(:hover) {
+  animation-name: decrement;
+  animation-duration: 0.25s;
+  animation-direction: reverse;
+}
+
+@keyframes enlarge {
+  100% {
+    box-shadow: 0.7em 0.5em 0.7em 0.2em rgba(52, 58, 64, 0.25);
+    transform: translate(0.2em, -0.2em);
+  }
+}
+
+@keyframes decrement {
+  100% {
+    box-shadow: 0.7em 0.5em 0.7em 0.2em rgba(52, 58, 64, 0.25);
+    transform: translate(0.2em, -0.2em);
+  }
+}
+
+.absolute {
+  position: absolute;
+  top: 460px;
+  padding: 2em;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.img--container {
+  width: 1200px;
   height: 200px;
-  padding: 0 2%;
+  max-width: 100%;
+  margin: auto;
+  margin: 1em auto;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.destination--info-show {
+  opacity: 0;
+  transform: all 0.1;
+}
+
+.destination--info-hide {
+  opacity: 1;
+  transform: all 0.1;
 }

@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet" />
+    <script type="module" defer src="app.js"></script>
+    <script type="module" defer src="fetchingData.js"></script>
     <title>Tourism Types</title>
   </head>
   <body>
@@ -20,23 +22,35 @@
         <a href="../about Bulgaria/index.html" class="nav--link link-2">About Bulgaria</a>
         <a href="../attractions/index.html" class="nav--link nav--link--deal link-3">Attractions</a>
         <a href="../tourism Types/index.html" class="nav--link link-4">Tourism Types</a>
-        <a href="#" class="nav--link link-5">Contacts</a>
       </nav>
     </div>
 
-    <h3 class="heading-title">Tourism in Bulgaria</h3>
-    <ul class="heading">
-      <li class="heading-list">Mountain Tourism</li>
-      <li class="heading-list">Sea Tourism</li>
-      <li class="heading-list">Cultural Tourism</li>
-      <li class="heading-list">Eco Tourism</li>
-    </ul>
+    <div class="heading">
+      <button class="heading-button hidden">Back</button>
+      <h3 class="heading-title">Tourism in Bulgaria</h3>
+    </div>
 
-    <ul class="heading--img">
-      <li><img src="../../img/tourism--page/ski-tourism.jpg" class="heading--img--list" /></li>
-      <li><img src="../../img/tourism--page/sea-tourism.jpg" class="heading--img--list" /></li>
-      <li><img src="../../img/tourism--page/eco-tourism.jpeg" class="heading--img--list" /></li>
-      <li><img src="../../img/tourism--page/cultural-tourism.png" class="heading--img--list" /></li>
-    </ul>
+    <div class="grid">
+      <div class="grid-list first">Mountain Tourism</div>
+      <div class="grid-list second">Sea Tourism</div>
+      <div class="grid-list third">Eco Tourism</div>
+      <div class="grid-list fourth">Cultural Tourism</div>
+      <div class="grid--img">
+        <img src="../../img/tourism--page/ski-tourism.jpg" class="grid--img--list fifth" />
+      </div>
+      <div class="grid--img">
+        <img src="../../img/tourism--page/sea-tourism.jpg" class="grid--img--list sixth" />
+      </div>
+      <div class="grid--img">
+        <img src="../../img/tourism--page/eco-tourism.jpg" class="grid--img--list seventh" />
+      </div>
+      <div class="grid--img">
+        <img src="../../img/tourism--page/cultural-tourism.jpg" class="grid--img--list eighth" />
+      </div>
+    </div>
+
+    <div class="img--container hidden"><img class="img" /></div>
+
+    <div class="destinations--info absolute"></div>
   </body>
 </html>
