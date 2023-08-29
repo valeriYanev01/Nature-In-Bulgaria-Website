@@ -32,6 +32,15 @@ async function backBtn() {
   });
 }
 
+function unHoverEffect(el) {
+  imgEl[el].addEventListener("mouseover", function () {
+    imgEl[el].classList.add(".grid--img--list:hover");
+    if (imgEl[el].classList.contains(".grid--img--list:hover")) {
+      imgEl[el].style.animationDuration = "0.25s";
+    }
+  });
+}
+
 function showImgContainer(el) {
   setTimeout(() => {
     imgContainerEl.classList.remove("hidden");
@@ -63,6 +72,7 @@ function imgBuild(src, content) {
 }
 
 for (let i = 0; i < imgEl.length; i++) {
+  unHoverEffect(i);
   imgEl[i].addEventListener("click", function () {
     hideGrid();
     showImgContainer(i);

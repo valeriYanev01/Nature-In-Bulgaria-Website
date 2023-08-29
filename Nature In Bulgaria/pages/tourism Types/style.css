@@ -123,6 +123,8 @@ h1 {
   object-position: 35% 60%;
   cursor: pointer;
   border-radius: 0.5em;
+  box-shadow: 1em 1em 1em 0.3em rgba(52, 58, 64, 0.2);
+  transform: translate(0.05em, -0.05em);
 }
 
 .grid--img--list:hover {
@@ -133,7 +135,6 @@ h1 {
 
 .grid--img--list:not(:hover) {
   animation-name: decrement;
-  animation-duration: 0.25s;
   animation-direction: reverse;
 }
 
@@ -142,9 +143,17 @@ h1 {
     box-shadow: 0.7em 0.5em 0.7em 0.2em rgba(52, 58, 64, 0.25);
     transform: translate(0.2em, -0.2em);
   }
+  0% {
+    box-shadow: 1em 1em 1em 0.3em rgba(52, 58, 64, 0.2);
+    transform: translate(0.05em, -0.05em);
+  }
 }
 
 @keyframes decrement {
+  0% {
+    box-shadow: 1em 1em 1em 0.3em rgba(52, 58, 64, 0.2);
+    transform: translate(0.05em, -0.05em);
+  }
   100% {
     box-shadow: 0.7em 0.5em 0.7em 0.2em rgba(52, 58, 64, 0.25);
     transform: translate(0.2em, -0.2em);
