@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../navbar.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet" />
     <script type="module" defer src="app.js"></script>
     <script type="module" defer src="fetchingData.js"></script>
+    <script defer type="module" src="../navbar.js"></script>
+
     <title>Tourism Types</title>
   </head>
   <body>
@@ -25,10 +28,8 @@
       </nav>
     </div>
 
-    <div class="heading">
-      <button class="heading-button hidden">Back</button>
-      <h3 class="heading-title">Tourism in Bulgaria</h3>
-    </div>
+    <button class="heading-button hidden">Back</button>
+    <h3 class="heading-title">Tourism in Bulgaria</h3>
 
     <div class="grid">
       <div class="grid-list first">Ski Tourism</div>
@@ -36,7 +37,7 @@
       <div class="grid-list third">Eco Tourism</div>
       <div class="grid-list fourth">Cultural Tourism</div>
       <div class="grid--img">
-        <img src="../../img/tourism--page/ski-tourism.jpg" class="grid--img--list fifth" />
+        <img src="../../img/tourism--page/ski-tourism.jpg" alt="Mountain skiing" class="grid--img--list fifth" />
       </div>
       <div class="grid--img">
         <img src="../../img/tourism--page/sea-tourism.jpg" class="grid--img--list sixth" />
@@ -52,5 +53,20 @@
     <div class="img--container hidden"><img class="img" /></div>
 
     <div class="destinations--info absolute"></div>
+    <img class="bg" src="../../img/tourism--page/bg-background.jpg" />
+
+    <footer class="footer">
+      <a class="footer--nature--link" href="../front/index.html">Nature in Bulgaria</a>
+      <nav class="footer--links">
+        <a href="../front/index.html" class="footer--link">Home</a>
+        <a href="../about Bulgaria/index.html" class="footer--link">About Bulgaria</a>
+        <a href="../attractions/index.html" class="footer--link footer--link--deal">Attractions</a>
+        <a href="../tourism Types/index.html" class="footer--link">Tourism Types</a>
+      </nav>
+      <a href="https://github.com/valeriYanev01/Nature-In-Bulgaria-Website" target="_blank" class="footer--github-link">
+        <img class="footer--github-logo" src="../../img/Github-icon.png"
+      /></a>
+      <p class="footer--copyright">&copy; 2023 Valeri Yanev</p>
+    </footer>
   </body>
 </html>

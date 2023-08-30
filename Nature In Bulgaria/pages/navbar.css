@@ -1,0 +1,15 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  transform: scaleY();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 0.4s;
+  width: 100%;
+  max-width: 100%;
+  z-index: 99;
+  height: 5.5em;
+  border-bottom: 3px solid #343a40;
+  border-width: thin;
+}

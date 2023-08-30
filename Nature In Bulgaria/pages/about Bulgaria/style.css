@@ -9,23 +9,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  margin: 0;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  transition: 0.4s;
-  width: 100%;
-  z-index: 99;
-  height: 5.5em;
-  padding: 10px 0;
-  border-bottom: 3px solid #343a40;
-  border-width: thin;
-  overflow-anchor: none;
+  margin: 5em 0;
 }
 
 h1 {

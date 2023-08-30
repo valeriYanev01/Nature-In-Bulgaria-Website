@@ -7,12 +7,17 @@ const imgContainerEl = document.querySelector(".img--container");
 const headingBtnEl = document.querySelector(".heading-button");
 const headingTitleEl = document.querySelector(".heading-title");
 const destinationInfoEl = document.querySelector(".destinations--info");
+const bgEl = document.querySelector(".bg");
 
+destinationInfoEl.textContent = "Loading";
 destinationInfoEl.innerHTML = await fetchDescription().then((tour) => {
   return tour.description;
 });
 
-async function buildTitleAndDescription(description, title, el) {
+async function buildTitleAndDescription(description, title, el, img) {
+  destinationInfoEl.textContent = "Loading";
+  headingTitleEl.textContent = "Loading";
+  bgEl.src = "none";
   description = await fetchData(el).then((desc) => {
     return desc.tourDescription;
   });
@@ -21,6 +26,7 @@ async function buildTitleAndDescription(description, title, el) {
   });
   headingTitleEl.textContent = title;
   destinationInfoEl.innerHTML = description;
+  bgEl.src = `../../img/tourism--page/${img}-background.jpg`;
 }
 
 async function showDescription(el) {
@@ -30,19 +36,19 @@ async function showDescription(el) {
   let title;
 
   if (imgEl[el].classList.contains("fifth")) {
-    buildTitleAndDescription(description, title, 0);
+    buildTitleAndDescription(description, title, 0, "ski");
   }
 
   if (imgEl[el].classList.contains("sixth")) {
-    buildTitleAndDescription(description, title, 1);
+    buildTitleAndDescription(description, title, 1, "sea");
   }
 
   if (imgEl[el].classList.contains("seventh")) {
-    buildTitleAndDescription(description, title, 3);
+    buildTitleAndDescription(description, title, 3, "eco");
   }
 
   if (imgEl[el].classList.contains("eighth")) {
-    buildTitleAndDescription(description, title, 2);
+    buildTitleAndDescription(description, title, 2, "culture");
   }
 }
 
@@ -54,6 +60,9 @@ function hideGrid() {
 }
 
 async function backBtn() {
+  window.scrollTo(0, 0);
+  destinationInfoEl.textContent = "";
+  bgEl.src = "../../img/tourism--page/bg-background.jpg";
   imgContainerEl.classList.add("hide");
   imgContainerEl.classList.add("hidden");
   headingBtnEl.classList.remove("hidden");
