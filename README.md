@@ -6,8 +6,6 @@
 
 **Front Page ↓**
 
-<br/>
-
 ![Screenshot of the front page of the app](https://i.ibb.co/drPgvS1/nature-in-bulgaria-gh.png)
 
 <br/>
