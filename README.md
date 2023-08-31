@@ -1,5 +1,5 @@
 # Nature In Bulgaria
-### A portfolio app, using html, css and js
+### A portfolio app, using Html, Css and JavaScript.
 
 <br/>
 <br/>
