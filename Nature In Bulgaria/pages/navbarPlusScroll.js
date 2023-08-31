@@ -8,8 +8,35 @@ const linkThirdEl = document.querySelector(".link-3");
 const linkFourthEl = document.querySelector(".link-4");
 const mainContainer = document.querySelector(".main--container");
 
+const scrollBtnEl = document.querySelector(".scrTop");
+
+const scrollFnc = () => {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    scrollBtnEl.style.display = "block";
+  } else {
+    scrollBtnEl.style.display = "none";
+  }
+};
+
+const backToTop = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+if (!scrollBtnEl) {
+} else {
+  scrollBtnEl.addEventListener("click", backToTop);
+}
+
 window.onscroll = function () {
   scrollFunction();
+  if (!scrollBtnEl) {
+  } else {
+    scrollFnc();
+  }
 };
 
 const scrollFunction = () => {
